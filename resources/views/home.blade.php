@@ -33,6 +33,12 @@
     Interface
   </div>
 
+<li class="nav-item active">
+        <a class="nav-link" href="{{ url('/membertable')}}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Members</span></a>
+      </li>
+
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -101,11 +107,11 @@
   </li>
 
   <!-- Nav Item - Tables -->
-  <li class="nav-item">
-    <a class="nav-link" href="tables.html">
+  <!-- <li class="nav-item">
+    <a class="nav-link" href="{{ url('/tables') }}">
       <i class="fas fa-fw fa-table"></i>
       <span>Tables</span></a>
-  </li>
+  </li> -->
 
   <!-- Divider -->
   <hr class="sidebar-divider d-none d-md-block">
@@ -505,7 +511,7 @@
           </div>
 
           <!-- Color System -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-6 mb-4">
               <div class="card bg-primary text-white shadow">
                 <div class="card-body">
@@ -556,9 +562,9 @@
             </div>
           </div>
 
-        </div>
+        </div>-->
 
-        <div class="col-lg-6 mb-4">
+        <!-- <div class="col-lg-6 mb-4">  -->
 
           <!-- Illustrations -->
           <div class="card shadow mb-4">
