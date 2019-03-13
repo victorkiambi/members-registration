@@ -26,7 +26,7 @@
 </head>
 <body>
     <div id="app">
-        <!-- <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel"> 
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Home') }}
@@ -35,25 +35,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
                     <!-- Left Side Of Navbar -->
-                    <!-- <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto">
 
-                    </ul> -->
+                    </ul> 
 
                     <!-- Right Side Of Navbar -->
-                    <!-- <ul class="navbar-nav ml-auto"> -->
+                    <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        <!-- @guest -->
-                            <!-- <li class="nav-item"> -->
-                                <!-- <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
-                            @endif -->
-                        <!-- @else
+                            @endif 
+                        @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -74,8 +74,8 @@
                         @endguest
                     </ul>
                 </div>
-            </div> -->
-        <!-- </nav> -->
+            </div> 
+        </nav>
 
         <main class="py-4">
             @yield('content')

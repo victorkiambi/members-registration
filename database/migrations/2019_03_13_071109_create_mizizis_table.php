@@ -14,15 +14,13 @@ class CreateMizizisTable extends Migration
     public function up()
     {
         Schema::create('mizizi', function (Blueprint $table) {
-            $table->bigInteger('contacts');
-            $table->primary('contacts');	
-
+            $table->bigInteger('contacts');	
             $table->boolean('reg_status');
             $table->integer('amount');	
             $table->integer('balance');	
             $table->timestamps();
 
-            $table->foreign('contacts')->references('contact')->on('members');
+            // $table->foreign('contacts')->references('contact')->on('members');
 
         });
     }

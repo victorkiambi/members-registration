@@ -14,14 +14,12 @@ class CreateAttendancesTable extends Migration
     public function up()
     {
         Schema::create('attendance', function (Blueprint $table) {
-            $table->bigInteger('contacts');
-            $table->primary('contacts');	
-
+            $table->bigInteger('contacts');	
             $table->date('date');	
             $table->boolean('attend_status');	
             $table->string('reason');	
             
-            $table->foreign('contacts')->references('contact')->on('members');
+            // $table->foreign('contacts')->references('contact')->on('members');
             $table->timestamps();
         });
     }

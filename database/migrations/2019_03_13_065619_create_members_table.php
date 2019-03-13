@@ -27,10 +27,6 @@ class CreateMembersTable extends Migration
             $table->boolean('admitted');
             $table->boolean('commissioned');
 
-
-
-
-
             $table->timestamps();
         });
     }

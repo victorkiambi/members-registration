@@ -15,6 +15,7 @@ class MembersController extends Controller
     public function index()
     {
         //
+        return Members:: all();
     }
 
     /**
@@ -36,6 +37,9 @@ class MembersController extends Controller
     public function store(Request $request)
     {
         //
+        $members = Members::create($request->all());
+        return response()->json($members, 201);
+
     }
 
     /**
@@ -47,6 +51,7 @@ class MembersController extends Controller
     public function show(Members $members)
     {
         //
+        return $members;
     }
 
     /**
@@ -70,6 +75,11 @@ class MembersController extends Controller
     public function update(Request $request, Members $members)
     {
         //
+        // $members = Article::findOrFail($contact);
+        $members->update($request->all());
+
+        return response()->json($members,200);
+
     }
 
     /**
@@ -81,5 +91,13 @@ class MembersController extends Controller
     public function destroy(Members $members)
     {
         //
+    }
+
+    public function delete(Members $members)
+    {
+        // $members = Members::findOrFail($contact);
+        $members->delete();
+
+        return response()->json(null, 204);
     }
 }
