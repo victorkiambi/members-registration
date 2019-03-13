@@ -100,4 +100,9 @@ class MembersController extends Controller
 
         return response()->json(null, 204);
     }
+
+    // public function __construct()
+    // {
+    //   $this->middleware('auth:api');
+    // }
 }
