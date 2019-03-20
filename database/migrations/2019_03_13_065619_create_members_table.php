@@ -18,14 +18,15 @@ class CreateMembersTable extends Migration
             $table->primary('contact');	
             $table->string('names');
             $table->bigInteger('id');
+            $table->string('email');
             $table->date('dob');
             $table->string('district');
             $table->string('guardian');
             $table->string('guardian_contact');
-            $table->binary('photo');
-            $table->boolean('full_member');
-            $table->boolean('admitted');
-            $table->boolean('commissioned');
+            // $table->binary('photo');
+            $table->string('full_member');
+            $table->string('admitted');
+            $table->string('commissioned');
 
             $table->timestamps();
         });

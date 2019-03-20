@@ -15,13 +15,17 @@ Route::get('/', function () {
     return view('./auth/login');
 });
 
-Route::get('/membertable', function () {
-  
-    $members = DB::table('members')->get();
-    // return $members;
+// Route::get('/create', function () {
+//     return view('create');
+// });
 
-    return view('memberstable', ['members' => $members]);
-});
+// Route::get('/membertable', function () {
+  
+//     $members = DB::table('members')->get();
+//     // return $members;
+
+//     return view('memberstable', ['members' => $members]);
+// });
 
 
 
@@ -31,7 +35,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Route::get('/members', 'MembersController@index')->name('members');
+Route::get('/create', 'MembersController@create')->name('create');
+
+Route::post('/create', 'MembersController@store');
+
+
+
+
+
+Route::get('/members', 'MembersController@show')->name('members');
 
 
 //members
