@@ -29,18 +29,18 @@
             />
           </v-list-tile-avatar>
           <v-list-tile-title class="title">
-            Vuetify MD
+            Admin
           </v-list-tile-title>
         </v-list-tile>
         <v-divider/>
         <v-list-tile
           v-if="responsive"
         >
-          <v-text-field
+          <!-- <v-text-field
             class="purple-input search-input"
             label="Search..."
             color="purple"
-          />
+          /> -->
         </v-list-tile>
         <v-list-tile
           v-for="(link, i) in links"
@@ -92,14 +92,14 @@ export default {
         text: 'Dashboard'
       },
       {
-        to: '/user-profile',
+        to: '/create-member',
         icon: 'mdi-account',
-        text: 'User Profile'
+        text: 'Create Member'
       },
       {
-        to: '/table-list',
+        to: '/members-table',
         icon: 'mdi-clipboard-outline',
-        text: 'Table List'
+        text: 'Members'
       },
       {
         to: '/typography',
@@ -163,10 +163,17 @@ export default {
     .v-list__tile {
       border-radius: 4px;
 
+color: white;
+    text-decoration: none;
       &--buy {
         margin-top: auto;
         margin-bottom: 17px;
       }
+    }
+
+    .a{
+       color: white;
+    text-decoration: none;
     }
 
     .v-image__image--contain {

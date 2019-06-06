@@ -6,24 +6,24 @@
 export default [
   {
    
-  // path: '/',
-  // view: 'Create'
+  path: '/',
+  view: 'Dashboard'
 
-  // },
-  // {
+  },
+  {
     path: '/dashboard',
     // Relative to /src/views
     view: 'Dashboard'
   },
   {
-    path: '/user-profile',
+    path: '/create-member',
     name: 'User Profile',
-    view: 'UserProfile'
+    view: 'CreateMember'
   },
   {
-    path: '/table-list',
-    name: 'Table List',
-    view: 'TableList'
+    path: '/members-table',
+    name: 'Members Table',
+    view: 'MembersTable'
   },
   {
     path: '/typography',

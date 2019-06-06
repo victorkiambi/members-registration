@@ -1,14 +1,143 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[5],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Notifications.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Dashboard.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Dashboard.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -245,43 +374,144 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      color: null,
-      colors: ['purple', 'info', 'success', 'warning', 'error'],
-      top: true,
-      bottom: false,
-      left: false,
-      right: false,
-      snackbar: false
+      dailySalesChart: {
+        data: {
+          labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+          series: [[12, 17, 7, 17, 23, 18, 38]]
+        },
+        options: {
+          lineSmooth: this.$chartist.Interpolation.cardinal({
+            tension: 0
+          }),
+          low: 0,
+          high: 50,
+          // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          chartPadding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
+          }
+        }
+      },
+      dataCompletedTasksChart: {
+        data: {
+          labels: ['12am', '3pm', '6pm', '9pm', '12pm', '3am', '6am', '9am'],
+          series: [[230, 750, 450, 300, 280, 240, 200, 190]]
+        },
+        options: {
+          lineSmooth: this.$chartist.Interpolation.cardinal({
+            tension: 0
+          }),
+          low: 0,
+          high: 1000,
+          // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          chartPadding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
+          }
+        }
+      },
+      emailsSubscriptionChart: {
+        data: {
+          labels: ['Ja', 'Fe', 'Ma', 'Ap', 'Mai', 'Ju', 'Jul', 'Au', 'Se', 'Oc', 'No', 'De'],
+          series: [[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]]
+        },
+        options: {
+          axisX: {
+            showGrid: false
+          },
+          low: 0,
+          high: 1000,
+          chartPadding: {
+            top: 0,
+            right: 5,
+            bottom: 0,
+            left: 0
+          }
+        },
+        responsiveOptions: [['screen and (max-width: 640px)', {
+          seriesBarDistance: 5,
+          axisX: {
+            labelInterpolationFnc: function labelInterpolationFnc(value) {
+              return value[0];
+            }
+          }
+        }]]
+      },
+      headers: [{
+        sortable: false,
+        text: 'ID',
+        value: 'id'
+      }, {
+        sortable: false,
+        text: 'Name',
+        value: 'name'
+      }, {
+        sortable: false,
+        text: 'Salary',
+        value: 'salary',
+        align: 'right'
+      }, {
+        sortable: false,
+        text: 'Country',
+        value: 'country',
+        align: 'right'
+      }, {
+        sortable: false,
+        text: 'City',
+        value: 'city',
+        align: 'right'
+      }],
+      items: [{
+        name: 'Dakota Rice',
+        country: 'Niger',
+        city: 'Oud-Tunrhout',
+        salary: '$35,738'
+      }, {
+        name: 'Minerva Hooper',
+        country: 'Curaçao',
+        city: 'Sinaai-Waas',
+        salary: '$23,738'
+      }, {
+        name: 'Sage Rodriguez',
+        country: 'Netherlands',
+        city: 'Overland Park',
+        salary: '$56,142'
+      }, {
+        name: 'Philip Chanley',
+        country: 'Korea, South',
+        city: 'Gloucester',
+        salary: '$38,735'
+      }, {
+        name: 'Doris Greene',
+        country: 'Malawi',
+        city: 'Feldkirchen in Kārnten',
+        salary: '$63,542'
+      }],
+      tabs: 0,
+      list: {
+        0: false,
+        1: false,
+        2: false
+      }
     };
   },
   methods: {
-    snack: function snack() {
-      this.top = false;
-      this.bottom = false;
-      this.left = false;
-      this.right = false;
-
-      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-
-      for (var _i = 0, _args = args; _i < _args.length; _i++) {
-        var loc = _args[_i];
-        this[loc] = true;
-      }
-
-      this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
-      this.snackbar = true;
+    complete: function complete(index) {
+      this.list[index] = !this.list[index];
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=template&id=10055242&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Notifications.vue?vue&type=template&id=10055242& ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Dashboard.vue?vue&type=template&id=55657e0b&":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Dashboard.vue?vue&type=template&id=55657e0b& ***!
+  \****************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -295,459 +525,751 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-container",
-    { attrs: { fluid: "", "grid-list-xl": "", "fill-height": "" } },
+    { attrs: { "fill-height": "", fluid: "", "grid-list-xl": "" } },
     [
       _c(
         "v-layout",
-        { attrs: { "justify-center": "", "align-center": "" } },
+        { attrs: { wrap: "" } },
         [
           _c(
             "v-flex",
-            { attrs: { xs12: "" } },
+            { attrs: { md12: "", sm12: "", lg4: "" } },
             [
               _c(
-                "material-card",
-                { attrs: { color: "green" } },
+                "material-chart-card",
+                {
+                  attrs: {
+                    data: _vm.dailySalesChart.data,
+                    options: _vm.dailySalesChart.options,
+                    color: "info",
+                    type: "Line"
+                  }
+                },
                 [
-                  _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-                    _c("div", { staticClass: "title font-weight-light mb-2" }, [
-                      _vm._v("Notifications")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "category" },
-                      [
-                        _vm._v(
-                          "\n            Handcrafted by us with\n            "
-                        ),
-                        _c("v-icon", { attrs: { size: "17" } }, [
-                          _vm._v("\n              mdi-heart\n            ")
-                        ])
-                      ],
-                      1
-                    )
+                  _c("h4", { staticClass: "title font-weight-light" }, [
+                    _vm._v("Daily Sales")
                   ]),
                   _vm._v(" "),
                   _c(
-                    "v-card-text",
+                    "p",
+                    { staticClass: "category d-inline-flex font-weight-light" },
                     [
-                      _c(
-                        "v-layout",
-                        { attrs: { row: "", wrap: "" } },
-                        [
-                          _c(
-                            "v-flex",
-                            { attrs: { md6: "", sm12: "" } },
-                            [
-                              _c(
-                                "h2",
-                                { staticClass: "title font-weight-light mb-3" },
-                                [_vm._v("Notifications Style")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "info" }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                This is a plain notification\n              "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "info", dismissible: "" }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                This is a notification with close button.\n              "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: {
-                                    color: "info",
-                                    dismissible: "",
-                                    icon: "mdi-bell-plus"
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n\n                This is a notification with close button and icon.\n              "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: {
-                                    color: "info",
-                                    dismissible: "",
-                                    icon: "mdi-bell-plus"
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n\n                This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.\n              "
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-flex",
-                            { attrs: { md6: "", sm12: "" } },
-                            [
-                              _c(
-                                "h2",
-                                { staticClass: "title font-weight-light" },
-                                [_vm._v("Notifcation States")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "info", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("INFO")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="info"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "success", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("SUCCESS")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="success"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "warning", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("WARNING")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="warning"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "error", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("DANGER")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="error"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "purple", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("PRIMARY")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="purple"`\n              '
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "text-xs-center" }, [
-                        _c(
-                          "h2",
-                          { staticClass: "title font-weight-light mb-2" },
-                          [_vm._v("Notification Places")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          {
-                            staticClass:
-                              " subheading font-weight-light grey--text"
-                          },
-                          [_vm._v("Click to view notifications")]
-                        )
+                      _c("v-icon", { attrs: { color: "green", small: "" } }, [
+                        _vm._v("\n            mdi-arrow-up\n          ")
                       ]),
                       _vm._v(" "),
+                      _c("span", { staticClass: "green--text" }, [
+                        _vm._v("55%")
+                      ]),
+                      _vm._v(" \n          increase in today's sales\n        ")
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "template",
+                    { slot: "actions" },
+                    [
                       _c(
-                        "v-container",
-                        { attrs: { "grid-list-lg": "" } },
-                        [
-                          _c(
-                            "v-layout",
-                            {
-                              attrs: { "justify-center": "", row: "", wrap: "" }
-                            },
-                            [
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("top", "left")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Top Left\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("top")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Top Center\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-layout",
-                            {
-                              attrs: { "justify-center": "", row: "", wrap: "" }
-                            },
-                            [
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("top", "right")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Top Right\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("bottom", "left")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Bottom Left\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-layout",
-                            {
-                              attrs: { "justify-center": "", row: "", wrap: "" }
-                            },
-                            [
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("bottom")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Bottom Center\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("bottom", "right")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Bottom Right\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
+                        "v-icon",
+                        { staticClass: "mr-2", attrs: { small: "" } },
+                        [_vm._v("\n            mdi-clock-outline\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
-                        "v-snackbar",
+                        "span",
+                        { staticClass: "caption grey--text font-weight-light" },
+                        [_vm._v("updated 4 minutes ago")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                2
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { md12: "", sm12: "", lg4: "" } },
+            [
+              _c(
+                "material-chart-card",
+                {
+                  attrs: {
+                    data: _vm.emailsSubscriptionChart.data,
+                    options: _vm.emailsSubscriptionChart.options,
+                    "responsive-options":
+                      _vm.emailsSubscriptionChart.responsiveOptions,
+                    color: "red",
+                    type: "Bar"
+                  }
+                },
+                [
+                  _c("h4", { staticClass: "title font-weight-light" }, [
+                    _vm._v("Email Subscription")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "category d-inline-flex font-weight-light" },
+                    [_vm._v("Last Campaign Performance")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "template",
+                    { slot: "actions" },
+                    [
+                      _c(
+                        "v-icon",
+                        { staticClass: "mr-2", attrs: { small: "" } },
+                        [_vm._v("\n            mdi-clock-outline\n          ")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "caption grey--text font-weight-light" },
+                        [_vm._v("updated 10 minutes ago")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                2
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { md12: "", sm12: "", lg4: "" } },
+            [
+              _c(
+                "material-chart-card",
+                {
+                  attrs: {
+                    data: _vm.dataCompletedTasksChart.data,
+                    options: _vm.dataCompletedTasksChart.options,
+                    color: "green",
+                    type: "Line"
+                  }
+                },
+                [
+                  _c("h3", { staticClass: "title font-weight-light" }, [
+                    _vm._v("Completed Tasks")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "category d-inline-flex font-weight-light" },
+                    [_vm._v("Last Last Campaign Performance")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "template",
+                    { slot: "actions" },
+                    [
+                      _c(
+                        "v-icon",
+                        { staticClass: "mr-2", attrs: { small: "" } },
+                        [_vm._v("\n            mdi-clock-outline\n          ")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "caption grey--text font-weight-light" },
+                        [_vm._v("campaign sent 26 minutes ago")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                2
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { sm6: "", xs12: "", md6: "", lg3: "" } },
+            [
+              _c("material-stats-card", {
+                attrs: {
+                  color: "green",
+                  icon: "mdi-store",
+                  title: "Revenue",
+                  value: "$34,245",
+                  "sub-icon": "mdi-calendar",
+                  "sub-text": "Last 24 Hours"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { sm6: "", xs12: "", md6: "", lg3: "" } },
+            [
+              _c("material-stats-card", {
+                attrs: {
+                  color: "orange",
+                  icon: "mdi-content-copy",
+                  title: "Used Space",
+                  value: "49/50",
+                  "small-value": "GB",
+                  "sub-icon": "mdi-alert",
+                  "sub-icon-color": "error",
+                  "sub-text": "Get More Space...",
+                  "sub-text-color": "text-primary"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { sm6: "", xs12: "", md6: "", lg3: "" } },
+            [
+              _c("material-stats-card", {
+                attrs: {
+                  color: "red",
+                  icon: "mdi-information-outline",
+                  title: "Fixed Issues",
+                  value: "75",
+                  "sub-icon": "mdi-tag",
+                  "sub-text": "Tracked from Github"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { sm6: "", xs12: "", md6: "", lg3: "" } },
+            [
+              _c("material-stats-card", {
+                attrs: {
+                  color: "info",
+                  icon: "mdi-twitter",
+                  title: "Followers",
+                  value: "+245",
+                  "sub-icon": "mdi-update",
+                  "sub-text": "Just Updated"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { md12: "", lg6: "" } },
+            [
+              _c(
+                "material-card",
+                {
+                  attrs: {
+                    color: "orange",
+                    title: "Employee Stats",
+                    text: "New employees on 15th September, 2016"
+                  }
+                },
+                [
+                  _c("v-data-table", {
+                    attrs: {
+                      headers: _vm.headers,
+                      items: _vm.items,
+                      "hide-actions": ""
+                    },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "headerCell",
+                        fn: function(ref) {
+                          var header = ref.header
+                          return [
+                            _c("span", {
+                              staticClass:
+                                "font-weight-light text-warning text--darken-3",
+                              domProps: { textContent: _vm._s(header.text) }
+                            })
+                          ]
+                        }
+                      },
+                      {
+                        key: "items",
+                        fn: function(ref) {
+                          var index = ref.index
+                          var item = ref.item
+                          return [
+                            _c("td", [_vm._v(_vm._s(index + 1))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(item.name))]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "text-xs-right" }, [
+                              _vm._v(_vm._s(item.salary))
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "text-xs-right" }, [
+                              _vm._v(_vm._s(item.country))
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "text-xs-right" }, [
+                              _vm._v(_vm._s(item.city))
+                            ])
+                          ]
+                        }
+                      }
+                    ])
+                  })
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { md12: "", lg6: "" } },
+            [
+              _c(
+                "material-card",
+                { staticClass: "card-tabs", attrs: { color: "green" } },
+                [
+                  _c(
+                    "v-flex",
+                    { attrs: { slot: "header" }, slot: "header" },
+                    [
+                      _c(
+                        "v-tabs",
                         {
                           attrs: {
-                            color: _vm.color,
-                            bottom: _vm.bottom,
-                            top: _vm.top,
-                            left: _vm.left,
-                            right: _vm.right,
-                            dark: ""
+                            color: "transparent",
+                            "slider-color": "white"
                           },
                           model: {
-                            value: _vm.snackbar,
+                            value: _vm.tabs,
                             callback: function($$v) {
-                              _vm.snackbar = $$v
+                              _vm.tabs = $$v
                             },
-                            expression: "snackbar"
+                            expression: "tabs"
                           }
                         },
                         [
                           _c(
-                            "v-icon",
-                            { staticClass: "mr-3", attrs: { color: "white" } },
-                            [
-                              _vm._v(
-                                "\n              mdi-bell-plus\n            "
-                              )
-                            ]
+                            "span",
+                            {
+                              staticClass: "subheading font-weight-light mr-3",
+                              staticStyle: { "align-self": "center" }
+                            },
+                            [_vm._v("Tasks:")]
                           ),
                           _vm._v(" "),
-                          _c("div", [
-                            _vm._v("Welcome to "),
-                            _c("b", [_vm._v("Vue Material Dashboard")]),
-                            _vm._v(
-                              " - a beautiful freebie for every web developer."
-                            )
-                          ]),
+                          _c(
+                            "v-tab",
+                            { staticClass: "mr-3" },
+                            [
+                              _c("v-icon", { staticClass: "mr-2" }, [
+                                _vm._v("mdi-bug")
+                              ]),
+                              _vm._v("\n              Bugs\n            ")
+                            ],
+                            1
+                          ),
                           _vm._v(" "),
                           _c(
-                            "v-icon",
-                            {
-                              attrs: { size: "16" },
-                              on: {
-                                click: function($event) {
-                                  _vm.snackbar = false
-                                }
-                              }
-                            },
+                            "v-tab",
+                            { staticClass: "mr-3" },
                             [
-                              _vm._v(
-                                "\n              mdi-close-circle\n            "
-                              )
-                            ]
+                              _c("v-icon", { staticClass: "mr-2" }, [
+                                _vm._v("mdi-code-tags")
+                              ]),
+                              _vm._v("\n              Website\n            ")
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-tab",
+                            [
+                              _c("v-icon", { staticClass: "mr-2" }, [
+                                _vm._v("mdi-cloud")
+                              ]),
+                              _vm._v("\n              Server\n            ")
+                            ],
+                            1
                           )
                         ],
                         1
                       )
                     ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-tabs-items",
+                    {
+                      model: {
+                        value: _vm.tabs,
+                        callback: function($$v) {
+                          _vm.tabs = $$v
+                        },
+                        expression: "tabs"
+                      }
+                    },
+                    _vm._l(3, function(n) {
+                      return _c(
+                        "v-tab-item",
+                        { key: n },
+                        [
+                          _c(
+                            "v-list",
+                            { attrs: { "three-line": "" } },
+                            [
+                              _c(
+                                "v-list-tile",
+                                {
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.complete(0)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-list-tile-action",
+                                    [
+                                      _c("v-checkbox", {
+                                        attrs: {
+                                          value: _vm.list[0],
+                                          color: "green"
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-list-tile-title", [
+                                    _vm._v(
+                                      '\n                  Sign contract for "What are conference organized afraid of?"\n                '
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "d-flex" },
+                                    [
+                                      _c(
+                                        "v-tooltip",
+                                        {
+                                          attrs: {
+                                            top: "",
+                                            "content-class": "top"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "v-btn--simple",
+                                              attrs: {
+                                                slot: "activator",
+                                                color: "success",
+                                                icon: ""
+                                              },
+                                              slot: "activator"
+                                            },
+                                            [
+                                              _c(
+                                                "v-icon",
+                                                { attrs: { color: "primary" } },
+                                                [_vm._v("mdi-pencil")]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("span", [_vm._v("Edit")])
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-tooltip",
+                                        {
+                                          attrs: {
+                                            top: "",
+                                            "content-class": "top"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "v-btn--simple",
+                                              attrs: {
+                                                slot: "activator",
+                                                color: "danger",
+                                                icon: ""
+                                              },
+                                              slot: "activator"
+                                            },
+                                            [
+                                              _c(
+                                                "v-icon",
+                                                { attrs: { color: "error" } },
+                                                [_vm._v("mdi-close")]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("span", [_vm._v("Close")])
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("v-divider"),
+                              _vm._v(" "),
+                              _c(
+                                "v-list-tile",
+                                {
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.complete(1)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-list-tile-action",
+                                    [
+                                      _c("v-checkbox", {
+                                        attrs: {
+                                          value: _vm.list[1],
+                                          color: "success"
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-list-tile-title", [
+                                    _vm._v(
+                                      "\n                  Lines From Great Russian Literature? Or E-mails From My Boss?\n                "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "d-flex" },
+                                    [
+                                      _c(
+                                        "v-tooltip",
+                                        {
+                                          attrs: {
+                                            top: "",
+                                            "content-class": "top"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "v-btn--simple",
+                                              attrs: {
+                                                slot: "activator",
+                                                color: "success",
+                                                icon: ""
+                                              },
+                                              slot: "activator"
+                                            },
+                                            [
+                                              _c(
+                                                "v-icon",
+                                                { attrs: { color: "primary" } },
+                                                [_vm._v("mdi-pencil")]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("span", [_vm._v("Edit")])
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-tooltip",
+                                        {
+                                          attrs: {
+                                            top: "",
+                                            "content-class": "top"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "v-btn--simple",
+                                              attrs: {
+                                                slot: "activator",
+                                                color: "danger",
+                                                icon: ""
+                                              },
+                                              slot: "activator"
+                                            },
+                                            [
+                                              _c(
+                                                "v-icon",
+                                                { attrs: { color: "error" } },
+                                                [_vm._v("mdi-close")]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("span", [_vm._v("Close")])
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("v-divider"),
+                              _vm._v(" "),
+                              _c(
+                                "v-list-tile",
+                                {
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.complete(2)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-list-tile-action",
+                                    [
+                                      _c("v-checkbox", {
+                                        attrs: {
+                                          value: _vm.list[2],
+                                          color: "success"
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-list-tile-title", [
+                                    _vm._v(
+                                      "\n                  Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit\n                "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "d-flex" },
+                                    [
+                                      _c(
+                                        "v-tooltip",
+                                        {
+                                          attrs: {
+                                            top: "",
+                                            "content-class": "top"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "v-btn--simple",
+                                              attrs: {
+                                                slot: "activator",
+                                                color: "success",
+                                                icon: ""
+                                              },
+                                              slot: "activator"
+                                            },
+                                            [
+                                              _c(
+                                                "v-icon",
+                                                { attrs: { color: "primary" } },
+                                                [_vm._v("mdi-pencil")]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("span", [_vm._v("Edit")])
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-tooltip",
+                                        {
+                                          attrs: {
+                                            top: "",
+                                            "content-class": "top"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "v-btn--simple",
+                                              attrs: {
+                                                slot: "activator",
+                                                color: "danger",
+                                                icon: ""
+                                              },
+                                              slot: "activator"
+                                            },
+                                            [
+                                              _c(
+                                                "v-icon",
+                                                { attrs: { color: "error" } },
+                                                [_vm._v("mdi-close")]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("span", [_vm._v("Close")])
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    }),
                     1
                   )
                 ],
@@ -770,17 +1292,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/views/Notifications.vue":
-/*!*******************************************!*\
-  !*** ./resources/views/Notifications.vue ***!
-  \*******************************************/
+/***/ "./resources/views/Dashboard.vue":
+/*!***************************************!*\
+  !*** ./resources/views/Dashboard.vue ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notifications.vue?vue&type=template&id=10055242& */ "./resources/views/Notifications.vue?vue&type=template&id=10055242&");
-/* harmony import */ var _Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Notifications.vue?vue&type=script&lang=js& */ "./resources/views/Notifications.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Dashboard_vue_vue_type_template_id_55657e0b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard.vue?vue&type=template&id=55657e0b& */ "./resources/views/Dashboard.vue?vue&type=template&id=55657e0b&");
+/* harmony import */ var _Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dashboard.vue?vue&type=script&lang=js& */ "./resources/views/Dashboard.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -790,9 +1312,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Dashboard_vue_vue_type_template_id_55657e0b___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Dashboard_vue_vue_type_template_id_55657e0b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -802,38 +1324,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/views/Notifications.vue"
+component.options.__file = "resources/views/Dashboard.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/views/Notifications.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/views/Notifications.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
+/***/ "./resources/views/Dashboard.vue?vue&type=script&lang=js&":
+/*!****************************************************************!*\
+  !*** ./resources/views/Dashboard.vue?vue&type=script&lang=js& ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Notifications.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Dashboard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Dashboard.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/views/Notifications.vue?vue&type=template&id=10055242&":
-/*!**************************************************************************!*\
-  !*** ./resources/views/Notifications.vue?vue&type=template&id=10055242& ***!
-  \**************************************************************************/
+/***/ "./resources/views/Dashboard.vue?vue&type=template&id=55657e0b&":
+/*!**********************************************************************!*\
+  !*** ./resources/views/Dashboard.vue?vue&type=template&id=55657e0b& ***!
+  \**********************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Notifications.vue?vue&type=template&id=10055242& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=template&id=10055242&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_55657e0b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Dashboard.vue?vue&type=template&id=55657e0b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Dashboard.vue?vue&type=template&id=55657e0b&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_55657e0b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_55657e0b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

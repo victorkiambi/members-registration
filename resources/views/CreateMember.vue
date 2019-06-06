@@ -13,8 +13,8 @@
       >
         <material-card
           color="green"
-          title="Edit Profile"
-          text="Complete your profile"
+          title="Members"
+          text="Create Member profile"
         >
           <v-form>
             <v-container py-0>
@@ -113,7 +113,7 @@
           </v-form>
         </material-card>
       </v-flex>
-      <v-flex
+      <!-- <v-flex
         xs12
         md4
       >
@@ -138,7 +138,7 @@
             >Follow</v-btn>
           </v-card-text>
         </material-card>
-      </v-flex>
+      </v-flex> -->
     </v-layout>
   </v-container>
 </template>
