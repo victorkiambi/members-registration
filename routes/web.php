@@ -11,40 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('./auth/login');
-});
-
-// Route::get('/create', function () {
-//     return view('create');
+// Route::get('/', function () {
+//     return view('home');
 // });
 
-// Route::get('/membertable', function () {
-  
-//     $members = DB::table('members')->get();
-//     // return $members;
+// Auth::routes();
 
-//     return view('memberstable', ['members' => $members]);
-// });
+Route::get('/', 'HomeController@index');
 
+// Route::get('/home', 'HomeController@index');
 
+// Route::get('/create', 'MembersController@create')->name('create');
 
-Auth::routes();
-
-// Route::get('/', 'LoginController@index')->name('login');
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/create', 'MembersController@create')->name('create');
-
-Route::post('/create', 'MembersController@store');
+// Route::post('/create', 'MembersController@store');
 
 
 
 
 
-Route::get('/members', 'MembersController@show')->name('members');
+// Route::get('/members', 'MembersController@show')->name('members');
 
 
 //members
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
