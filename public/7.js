@@ -1,186 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Notifications.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Icons.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Icons.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -245,43 +73,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      color: null,
-      colors: ['purple', 'info', 'success', 'warning', 'error'],
-      top: true,
-      bottom: false,
-      left: false,
-      right: false,
-      snackbar: false
+      icons: ['mdi-access-point', 'mdi-access-point-network', 'mdi-account', 'mdi-account-alert', 'mdi-account-box', 'mdi-account-box-multiple', 'mdi-account-box-outline', 'mdi-account-card-details', 'mdi-account-check', 'mdi-account-circle', 'mdi-account-convert', 'mdi-account-edit', 'mdi-account-group', 'mdi-account-heart', 'mdi-account-key', 'mdi-account-location', 'mdi-account-minus', 'mdi-account-multiple', 'mdi-account-multiple-check', 'mdi-account-multiple-minus', 'mdi-account-multiple-outline', 'mdi-account-multiple-plus', 'mdi-account-multiple-plus-outline', 'mdi-account-network', 'mdi-account-off', 'mdi-account-outline', 'mdi-account-plus', 'mdi-account-plus-outline', 'mdi-account-remove', 'mdi-account-search', 'mdi-account-search-outline', 'mdi-account-settings', 'mdi-account-settings-variant', 'mdi-account-star', 'mdi-account-switch', 'mdi-accusoft', 'mdi-adjust', 'mdi-adobe', 'mdi-air-conditioner', 'mdi-airballoon', 'mdi-airplane', 'mdi-airplane-landing', 'mdi-airplane-off', 'mdi-airplane-takeoff', 'mdi-airplay', 'mdi-airport', 'mdi-alarm', 'mdi-alarm-bell', 'mdi-alarm-check', 'mdi-alarm-light', 'mdi-alarm-multiple', 'mdi-alarm-off', 'mdi-alarm-plus', 'mdi-alarm-snooze', 'mdi-album', 'mdi-alert', 'mdi-alert-box', 'mdi-alert-circle', 'mdi-alert-circle-outline', 'mdi-alert-decagram', 'mdi-alert-octagon', 'mdi-alert-octagram', 'mdi-alert-outline', 'mdi-alien', 'mdi-all-inclusive', 'mdi-alpha', 'mdi-alphabetical', 'mdi-altimeter', 'mdi-amazon', 'mdi-amazon-alexa', 'mdi-amazon-drive', 'mdi-ambulance', 'mdi-amplifier', 'mdi-anchor', 'mdi-android', 'mdi-android-debug-bridge', 'mdi-android-head', 'mdi-android-studio', 'mdi-angle-acute', 'mdi-angle-obtuse', 'mdi-angle-right', 'mdi-angular', 'mdi-angularjs', 'mdi-animation', 'mdi-animation-play', 'mdi-anvil', 'mdi-apple', 'mdi-apple-finder', 'mdi-apple-icloud', 'mdi-apple-ios', 'mdi-apple-keyboard-caps', 'mdi-apple-keyboard-command', 'mdi-apple-keyboard-control', 'mdi-apple-keyboard-option', 'mdi-apple-keyboard-shift', 'mdi-apple-safari', 'mdi-application', 'mdi-approval', 'mdi-apps', 'mdi-arch', 'mdi-archive', 'mdi-arrange-bring-forward', 'mdi-arrange-bring-to-front', 'mdi-arrange-send-backward', 'mdi-arrange-send-to-back', 'mdi-arrow-all', 'mdi-arrow-bottom-left', 'mdi-arrow-bottom-left-bold-outline', 'mdi-arrow-bottom-left-thick', 'mdi-arrow-bottom-right', 'mdi-arrow-bottom-right-bold-outline', 'mdi-arrow-bottom-right-thick', 'mdi-arrow-collapse', 'mdi-arrow-collapse-all', 'mdi-arrow-collapse-down', 'mdi-arrow-collapse-horizontal', 'mdi-arrow-collapse-left', 'mdi-arrow-collapse-right', 'mdi-arrow-collapse-up', 'mdi-arrow-collapse-vertical', 'mdi-arrow-decision', 'mdi-arrow-decision-auto', 'mdi-arrow-decision-auto-outline', 'mdi-arrow-decision-outline', 'mdi-arrow-down', 'mdi-arrow-down-bold', 'mdi-arrow-down-bold-box', 'mdi-arrow-down-bold-box-outline', 'mdi-arrow-down-bold-circle', 'mdi-arrow-down-bold-circle-outline', 'mdi-arrow-down-bold-hexagon-outline', 'mdi-arrow-down-bold-outline', 'mdi-arrow-down-box', 'mdi-arrow-down-drop-circle', 'mdi-arrow-down-drop-circle-outline', 'mdi-arrow-down-thick', 'mdi-arrow-expand', 'mdi-arrow-expand-all', 'mdi-arrow-expand-down', 'mdi-arrow-expand-horizontal', 'mdi-arrow-expand-left', 'mdi-arrow-expand-right', 'mdi-arrow-expand-up', 'mdi-arrow-expand-vertical', 'mdi-arrow-left', 'mdi-arrow-left-bold', 'mdi-arrow-left-bold-box', 'mdi-arrow-left-bold-box-outline', 'mdi-arrow-left-bold-circle', 'mdi-arrow-left-bold-circle-outline', 'mdi-arrow-left-bold-hexagon-outline', 'mdi-arrow-left-bold-outline', 'mdi-arrow-left-box', 'mdi-arrow-left-drop-circle', 'mdi-arrow-left-drop-circle-outline', 'mdi-arrow-left-right-bold-outline', 'mdi-arrow-left-thick', 'mdi-arrow-right', 'mdi-arrow-right-bold', 'mdi-arrow-right-bold-box', 'mdi-arrow-right-bold-box-outline', 'mdi-arrow-right-bold-circle', 'mdi-arrow-right-bold-circle-outline', 'mdi-arrow-right-bold-hexagon-outline', 'mdi-arrow-right-bold-outline', 'mdi-arrow-right-box', 'mdi-arrow-right-drop-circle', 'mdi-arrow-right-drop-circle-outline', 'mdi-arrow-right-thick', 'mdi-arrow-split-horizontal', 'mdi-arrow-split-vertical', 'mdi-arrow-top-left', 'mdi-arrow-top-left-bold-outline', 'mdi-arrow-top-left-thick', 'mdi-arrow-top-right', 'mdi-arrow-top-right-bold-outline', 'mdi-arrow-top-right-thick', 'mdi-arrow-up', 'mdi-arrow-up-bold', 'mdi-arrow-up-bold-box', 'mdi-arrow-up-bold-box-outline', 'mdi-arrow-up-bold-circle', 'mdi-arrow-up-bold-circle-outline', 'mdi-arrow-up-bold-hexagon-outline', 'mdi-arrow-up-bold-outline', 'mdi-arrow-up-box', 'mdi-arrow-up-down-bold-outline', 'mdi-arrow-up-drop-circle', 'mdi-arrow-up-drop-circle-outline', 'mdi-arrow-up-thick', 'mdi-artist', 'mdi-assistant', 'mdi-asterisk', 'mdi-at', 'mdi-atlassian', 'mdi-atom', 'mdi-attachment', 'mdi-audio-video', 'mdi-audiobook', 'mdi-augmented-reality', 'mdi-auto-fix', 'mdi-auto-upload', 'mdi-autorenew', 'mdi-av-timer', 'mdi-axe', 'mdi-azure', 'mdi-baby', 'mdi-baby-buggy', 'mdi-backburger', 'mdi-backspace', 'mdi-backup-restore', 'mdi-badminton']
     };
-  },
-  methods: {
-    snack: function snack() {
-      this.top = false;
-      this.bottom = false;
-      this.left = false;
-      this.right = false;
-
-      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-
-      for (var _i = 0, _args = args; _i < _args.length; _i++) {
-        var loc = _args[_i];
-        this[loc] = true;
-      }
-
-      this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
-      this.snackbar = true;
-    }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=template&id=10055242&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Notifications.vue?vue&type=template&id=10055242& ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Icons.vue?vue&type=template&id=f1c909de&":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/Icons.vue?vue&type=template&id=f1c909de& ***!
+  \************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -295,464 +97,94 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-container",
-    { attrs: { fluid: "", "grid-list-xl": "", "fill-height": "" } },
+    {
+      staticStyle: { "flex-wrap": "wrap" },
+      attrs: { "fill-height": "", fluid: "" }
+    },
     [
       _c(
-        "v-layout",
-        { attrs: { "justify-center": "", "align-center": "" } },
+        "material-card",
+        { attrs: { color: "green" } },
         [
-          _c(
-            "v-flex",
-            { attrs: { xs12: "" } },
-            [
+          _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+            _c("div", { staticClass: "title font-weight-light mb-2" }, [
+              _vm._v("Material Design Icons")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "category font-weight-thin" }, [
+              _vm._v("\n        See all available\n        "),
               _c(
-                "material-card",
-                { attrs: { color: "green" } },
+                "a",
+                {
+                  staticClass: "white--text",
+                  attrs: {
+                    href: "https://materialdesignicons.com/",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("\n          Icons\n        ")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-layout",
+            { attrs: { "align-center": "", "justify-center": "", wrap: "" } },
+            _vm._l(_vm.icons, function(icon) {
+              return _c(
+                "v-flex",
+                { key: icon, attrs: { "ma-2": "" } },
                 [
-                  _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-                    _c("div", { staticClass: "title font-weight-light mb-2" }, [
-                      _vm._v("Notifications")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "category" },
-                      [
-                        _vm._v(
-                          "\n            Handcrafted by us with\n            "
-                        ),
-                        _c("v-icon", { attrs: { size: "17" } }, [
-                          _vm._v("\n              mdi-heart\n            ")
-                        ])
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
                   _c(
-                    "v-card-text",
+                    "v-tooltip",
+                    { attrs: { top: "", "content-class": "top" } },
                     [
                       _c(
-                        "v-layout",
-                        { attrs: { row: "", wrap: "" } },
+                        "v-icon",
+                        { attrs: { slot: "activator" }, slot: "activator" },
                         [
-                          _c(
-                            "v-flex",
-                            { attrs: { md6: "", sm12: "" } },
-                            [
-                              _c(
-                                "h2",
-                                { staticClass: "title font-weight-light mb-3" },
-                                [_vm._v("Notifications Style")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "info" }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                This is a plain notification\n              "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "info", dismissible: "" }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                This is a notification with close button.\n              "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: {
-                                    color: "info",
-                                    dismissible: "",
-                                    icon: "mdi-bell-plus"
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n\n                This is a notification with close button and icon.\n              "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: {
-                                    color: "info",
-                                    dismissible: "",
-                                    icon: "mdi-bell-plus"
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n\n                This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.\n              "
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-flex",
-                            { attrs: { md6: "", sm12: "" } },
-                            [
-                              _c(
-                                "h2",
-                                { staticClass: "title font-weight-light" },
-                                [_vm._v("Notifcation States")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "info", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("INFO")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="info"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "success", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("SUCCESS")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="success"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "warning", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("WARNING")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="warning"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "error", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("DANGER")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="error"`\n              '
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "material-notification",
-                                {
-                                  staticClass: "mb-3",
-                                  attrs: { color: "purple", dismissible: "" }
-                                },
-                                [
-                                  _c("strong", [_vm._v("PRIMARY")]),
-                                  _vm._v(
-                                    ' - This is a regular notification made with `color="purple"`\n              '
-                                  )
-                                ]
-                              )
-                            ],
-                            1
+                          _vm._v(
+                            "\n            " + _vm._s(icon) + "\n          "
                           )
-                        ],
-                        1
+                        ]
                       ),
                       _vm._v(" "),
-                      _c("div", { staticClass: "text-xs-center" }, [
-                        _c(
-                          "h2",
-                          { staticClass: "title font-weight-light mb-2" },
-                          [_vm._v("Notification Places")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          {
-                            staticClass:
-                              " subheading font-weight-light grey--text"
-                          },
-                          [_vm._v("Click to view notifications")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-container",
-                        { attrs: { "grid-list-lg": "" } },
-                        [
-                          _c(
-                            "v-layout",
-                            {
-                              attrs: { "justify-center": "", row: "", wrap: "" }
-                            },
-                            [
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("top", "left")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Top Left\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("top")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Top Center\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-layout",
-                            {
-                              attrs: { "justify-center": "", row: "", wrap: "" }
-                            },
-                            [
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("top", "right")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Top Right\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("bottom", "left")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Bottom Left\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-layout",
-                            {
-                              attrs: { "justify-center": "", row: "", wrap: "" }
-                            },
-                            [
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("bottom")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Bottom Center\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-flex",
-                                { attrs: { xs12: "", sm4: "" } },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { block: "", color: "success" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.snack("bottom", "right")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Bottom Right\n                "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-snackbar",
-                        {
-                          attrs: {
-                            color: _vm.color,
-                            bottom: _vm.bottom,
-                            top: _vm.top,
-                            left: _vm.left,
-                            right: _vm.right,
-                            dark: ""
-                          },
-                          model: {
-                            value: _vm.snackbar,
-                            callback: function($$v) {
-                              _vm.snackbar = $$v
-                            },
-                            expression: "snackbar"
-                          }
-                        },
-                        [
-                          _c(
-                            "v-icon",
-                            { staticClass: "mr-3", attrs: { color: "white" } },
-                            [
-                              _vm._v(
-                                "\n              mdi-bell-plus\n            "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("div", [
-                            _vm._v("Welcome to "),
-                            _c("b", [_vm._v("Vue Material Dashboard")]),
-                            _vm._v(
-                              " - a beautiful freebie for every web developer."
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "v-icon",
-                            {
-                              attrs: { size: "16" },
-                              on: {
-                                click: function($event) {
-                                  _vm.snackbar = false
-                                }
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n              mdi-close-circle\n            "
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      )
+                      _c("span", [_vm._v(_vm._s(icon))])
                     ],
                     1
                   )
                 ],
                 1
               )
+            }),
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mx-auto" },
+        [
+          _c(
+            "v-btn",
+            {
+              staticClass: "mx-0 font-weight-light",
+              attrs: {
+                large: "",
+                color: "success",
+                href: "https://materialdesignicons.com/",
+                target: "_blank",
+                round: ""
+              }
+            },
+            [
+              _c("v-icon", { attrs: { left: "" } }, [
+                _vm._v("mdi-material-design")
+              ]),
+              _vm._v(" "),
+              _c("span", [_vm._v("See all icons")])
             ],
             1
           )
@@ -770,17 +202,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/views/Notifications.vue":
-/*!*******************************************!*\
-  !*** ./resources/views/Notifications.vue ***!
-  \*******************************************/
+/***/ "./resources/views/Icons.vue":
+/*!***********************************!*\
+  !*** ./resources/views/Icons.vue ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notifications.vue?vue&type=template&id=10055242& */ "./resources/views/Notifications.vue?vue&type=template&id=10055242&");
-/* harmony import */ var _Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Notifications.vue?vue&type=script&lang=js& */ "./resources/views/Notifications.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Icons_vue_vue_type_template_id_f1c909de___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Icons.vue?vue&type=template&id=f1c909de& */ "./resources/views/Icons.vue?vue&type=template&id=f1c909de&");
+/* harmony import */ var _Icons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Icons.vue?vue&type=script&lang=js& */ "./resources/views/Icons.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -790,9 +222,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Icons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Icons_vue_vue_type_template_id_f1c909de___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Icons_vue_vue_type_template_id_f1c909de___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -802,38 +234,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/views/Notifications.vue"
+component.options.__file = "resources/views/Icons.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/views/Notifications.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/views/Notifications.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
+/***/ "./resources/views/Icons.vue?vue&type=script&lang=js&":
+/*!************************************************************!*\
+  !*** ./resources/views/Icons.vue?vue&type=script&lang=js& ***!
+  \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Notifications.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Icons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Icons.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Icons.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Icons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/views/Notifications.vue?vue&type=template&id=10055242&":
-/*!**************************************************************************!*\
-  !*** ./resources/views/Notifications.vue?vue&type=template&id=10055242& ***!
-  \**************************************************************************/
+/***/ "./resources/views/Icons.vue?vue&type=template&id=f1c909de&":
+/*!******************************************************************!*\
+  !*** ./resources/views/Icons.vue?vue&type=template&id=f1c909de& ***!
+  \******************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Notifications.vue?vue&type=template&id=10055242& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Notifications.vue?vue&type=template&id=10055242&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Icons_vue_vue_type_template_id_f1c909de___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Icons.vue?vue&type=template&id=f1c909de& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/Icons.vue?vue&type=template&id=f1c909de&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Icons_vue_vue_type_template_id_f1c909de___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_10055242___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Icons_vue_vue_type_template_id_f1c909de___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -79,11 +79,12 @@ export default {
     
   }),
     mounted() {
-          axios.get("/api/members").then(response => {
-            this.items = response.data
+          axios
+          .get("/api/members").
+          then(response => {this.items = response.data
           })
-        }
-
-  
+          .catch(error => { console.log(error)
+        })  
+    }
 }
 </script>
